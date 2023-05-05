@@ -1,0 +1,36 @@
+{
+  "name": "coffee_shop",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@firebase/database": "^0.14.0",
+    "@headlessui/react": "^1.7.7",
+    "@heroicons/react": "^2.0.13",
+    "@material-tailwind/react": "^1.2.4",
+    "@sandstreamdev/react-swipeable-list": "github:sandstreamdev/react-swipeable-list",
+    "animate.css": "^4.1.1",
+    "axios": "^1.2.1",
+    "daisyui": "^2.43.0",
+    "emoji-picker-react": "^4.4.7",
+    "firebase": "^9.17.1",
+    "next": "13.0.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-toastify": "^9.1.1",
+    "react-virtualized": "^9.22.4",
+    "timeago.js": "^4.0.2",
+    "universal-cookie": "^4.0.4",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.19",
+    "tailwindcss": "^3.2.4"
+  }
+}

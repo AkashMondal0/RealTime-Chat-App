@@ -1,0 +1,32 @@
+version: '3'
+services:
+  front:
+    build: 
+      context: "./front"
+      dockerfile: dockerfile
+    ports:
+      - 3000:3000
+    container_name: chat-container
+    environment:
+      - WATCHPACK_POLLING=true
+    networks:
+      - mern-stack-network
+    volumes:
+      - ./front:/app
+  backend:
+    build: 
+      context: "./back"
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    container_name: back-container
+    networks:
+      - mern-stack-network
+    volumes:
+      - ./back:/app
+    depends_on:
+      - front
+networks:
+  mern-stack-network:
+volumes:
+  mongoData:

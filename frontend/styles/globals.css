@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.loader {
+    border-top-color: #3498db;
+    -webkit-animation: spinner 1.5s linear infinite;
+    animation: spinner 1.5s linear infinite;
+  }
+  
+  @-webkit-keyframes spinner {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spinner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+#style-3::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0);
+	background-color: transparent;
+	border-radius: 0px;
+}
+
+#style-3::-webkit-scrollbar
+{
+	width: 0px;
+	background-color: transparent;
+}
+
+#style-3::-webkit-scrollbar-thumb
+{
+	background-color: transparent;
+	border-radius: 0px;
+
+}
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+.animate__animated.animate__backInRight {
+  --animate-duration: 0.5s;
+}
+.animate__animated.animate__backInLeft {
+  --animate-duration: 0.5s;
+}
